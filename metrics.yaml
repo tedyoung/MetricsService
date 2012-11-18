@@ -1,0 +1,22 @@
+http:
+    port: 8082
+
+    adminPort: 8083
+
+logging:
+    level: INFO
+    console:
+        enabled: true
+        threshold: ALL
+        timeZone: GMT+8
+    
+    file:
+        enabled: true
+        threshold: ALL
+        currentLogFilename: metricsservice.log
+        archivedLogFilenamePattern: metricsservice-%d.log
+        timeZone: GMT+8
+
+services:
+    urls:
+        - http://localhost:8081/metrics
