@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Highcharts Example</title>
+		<title>Monitoring Console</title>
 		
 		
 		<!-- 1. Add these JavaScript inclusions in the head of your page -->
