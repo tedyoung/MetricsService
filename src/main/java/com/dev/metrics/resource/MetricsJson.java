@@ -1,22 +1,20 @@
 package com.dev.metrics.resource;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import com.dev.metrics.dao.Metrics;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+import com.yammer.metrics.annotation.Timed;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-
-import com.dev.metrics.dao.Metrics;
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.ClientResponse;
-import com.sun.jersey.api.client.WebResource;
-import com.yammer.metrics.annotation.Timed;
+import java.io.IOException;
+import java.util.ArrayList;
 
 @Path("/metricsjson")
 @Produces(MediaType.APPLICATION_JSON)

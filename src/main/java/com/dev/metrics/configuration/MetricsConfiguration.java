@@ -1,13 +1,11 @@
 package com.dev.metrics.configuration;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.yammer.dropwizard.config.Configuration;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-
-import org.codehaus.jackson.annotate.JsonProperty;
-
-import com.yammer.dropwizard.config.Configuration;
+import java.util.ArrayList;
 
 public class MetricsConfiguration extends Configuration
 {

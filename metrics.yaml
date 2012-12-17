@@ -1,6 +1,5 @@
 http:
     port: 8082
-
     adminPort: 8083
 
 logging:
@@ -9,7 +8,7 @@ logging:
         enabled: true
         threshold: ALL
         timeZone: GMT+8
-    
+
     file:
         enabled: true
         threshold: ALL
